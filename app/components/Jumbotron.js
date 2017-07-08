@@ -1,5 +1,5 @@
 var React = require("react");
-var Jumbotron = React.createClass({
+var Search = React.createClass({
   render: function() {
     return (
       <div className="jumbotron">
@@ -9,4 +9,4 @@ var Jumbotron = React.createClass({
     );
   }
 });
-module.exports = Jumbotron;
+module.exports = search;
