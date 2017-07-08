@@ -1,28 +1,23 @@
 import React from "react"
-var Navbar = React.createClass({
-  render: function() {
-    return (
-      <nav className="navbar navbar-default">
-        <div className="container-fluid">
-          <div className="container-header">
-            <button
-              type="buttpn"
-              className="navbar-toggle collapsed"
-              data-toggle="collapse"
-              data-target="#navbar"
-              arial-expanded="false"
-              arial-controls="navbar">
-                <span className="sr-only">Toggle navigation</span>
-                <span className="icon-bar"></span>
-                <span className="icon-bar"></span>
-                <span className="icon-bar"></span>
+const dropdownItems = [
+    {href: '#', name: ''},
+    {href: '#', name: 'Home Goods'},
+    {href: '#', name: 'Electronics'},
+    {href: '#', name: 'Clothes'},
+    {href: '#', name: 'Toys'},
+    {href: '#', name: 'Others'},
+];
 
-              </button>
-              <a className="navbar-brand" href="#">Remedan in US</a>
-          </div>
-        </div>
-      </nav>
-    );
-  }
-});
-module.exports = Navbar;
+const navbar = (
+    <Navbar>
+        <NavbarHeader href="homepage.html" name="giveaway"/>
+        <NavbarItems>
+            <Item link="index.html" title="navbar" />
+            <NavbarDropdown name="Categories">
+                  <DropdownMenu menuItems={dropdownItems}/>
+            </NavbarDropdown>
+        </NavbarItems>
+    </Navbar>
+);
+
+React.render(navbar, document.getElementById('navbar'));
