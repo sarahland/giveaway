@@ -1,0 +1,25 @@
+{
+  "name": "giveaway",
+  "version": "1.0.0",
+  "description": "Give away is a website where you can appload your unwanted but usable item online and give to any body who wants to get it for free. We have used react as a main front end technology and firebase database as a backend technology.",
+  "main": "npm start",
+  "scripts": {
+    "test": "test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sarahland/giveitup.git"
+  },
+  "keywords": [
+    "react"
+  ],
+  "author": "giveaway developer team",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sarahland/giveaway/issues"
+  },
+  "homepage": "https://github.com/sarahland/giveaway#readme",
+  "devDependencies": {
+    "babel-cli": "^6.24.1"
+  }
+}
