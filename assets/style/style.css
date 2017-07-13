@@ -98,12 +98,13 @@ body{
 
 
 
-	 .item-image{
+	 #item-image{
 	 	position:absolute;
 	 	height:600px;
 	 	width:600px;
 	 	left:20%;
 	 	bottom:-100px;
+	 	opacity:0.4;
 
 		}
 
@@ -192,15 +193,24 @@ footer .footer-container{
 
 
 
-#search-bar #search-col #zip-search{
-				width:50%;
-				}
+	#search-bar #search-col #zip-search{
+		width:50%;
+		}
 
 
-			#search-bar #search-col #item-search{
-				width:50%;
-				}
+	#search-bar #search-col #item-search{
+		width:50%;
+		}
 
+
+
+
+	 #item-image{
+	 	height:500px;
+	 	width:500px;
+	 	bottom:-50px;	
+		 left:0;
+		 }
 
 
 
