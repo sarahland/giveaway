@@ -6,7 +6,7 @@
   "scripts": {
     "start": "./node_modules/.bin/webpack-dev-server"
   },
-  "author": "giveaway Developers ar GW University",
+  "author": "giveaway Developers at GW University",
   "license": "MIT",
   "devDependencies": {
     "autoprefixer-loader": "^3.2.0",
