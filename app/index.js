@@ -1,10 +1,7 @@
-import React from 'react'
-import { render } from 'react-dom'
-import routes from './routes'
-
-
-window.React = React
+import React from 'react';
+import { render } from 'react-dom';
+import routes from "./config/routes";
 
 render(
 	routes,
-	document.getElementById('react-container'))
+	document.getElementById('react-container'));

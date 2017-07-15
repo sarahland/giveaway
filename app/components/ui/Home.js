@@ -1,4 +1,7 @@
+import React from 'react'
 import MainMenu from './MainMenu'
+// import Navbar from '../'
+
 
 const Home = () =>
     <div className="home">

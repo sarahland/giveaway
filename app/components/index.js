@@ -1,3 +1,4 @@
+import React from 'react';
 import MainMenu from './ui/MainMenu'
 
 export const Left = ({ children }) =>
