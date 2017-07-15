@@ -1,3 +1,4 @@
+import React from 'react';
 const loginPage = () => (
    <div className="donatenow">
         <h1>Sign Up</h1>
