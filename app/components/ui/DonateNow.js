@@ -1,5 +1,5 @@
 import { PropTypes, Component } from 'react'
-import ReactCompnent from 'react'
+import React from 'react'
 export const DonateNowForm = ({ name,email, phoneNumber, address, itemName, itemCondition, description, itemPicture }) => {
   let _name, _email, _phonNumber,  _address, _itemName, _itemCondition, _description, _itemPicture
   const submit =(e) => {
