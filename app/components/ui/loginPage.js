@@ -62,3 +62,4 @@ render() {
     }
 }
 )};
+export default LoginPage
