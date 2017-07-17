@@ -1,46 +1,11 @@
-import React from 'react'
-import React { Component } from 'react'
+import React from 'react';
 import Validation from 'react-validation';
-import validator from 'valiidator';
+import validator from 'validator';
+import validation from './validation';
+import  {Component, PropTypes} from 'react';
 
-class Item extends Component {
-//Merge a rule by using Object.assign
-Object.assign(Validation.rules, {
-  required: {
-    // function to validate value
-    rule: valu => {
-      return value.toString().trim();
-    },
-    //fucntion to return hint
-    hint: value => {
-      return <span className='form-error is-visible'>Required</span>
-
-    }
-  },
-  email: {
-    rule: value => {
-      return <span className='form-error is-visible'>{value} isnt an Email.</span>
-
-    }
-  },
-  password: {
-    rule: (value, components) => {
-      const password = components.password.state;
-      const passwordConfirm = components.passwordConfirm.state;
-      const isBothUsed = password
-      && passwordConfirm
-      && password.isUsed
-      && passwordConfirm.isUsed;
-    const isBothChanged = isBothUsed && password.isChanged && passwordConfirm.isChanged;
-    if (!isBothUsed || !isBothChanged) {
-      return true;
-    }
-    return password.value.value === passwordConfirm.value;
-  },
-  hint: () => <span className="form-error is-visible"> Passwords should be ewqual.</span>
-},
-
-render() {
+export default class LoginPage extends Component {
+    render() {
         return <Validation.components.Form>
             <h3>Registration</h3>
             <div>
@@ -61,4 +26,3 @@ render() {
         </Validation.components.Form>;
     }
 }
-)};
