@@ -27,13 +27,19 @@ const MainMenu = () => {
             	  }}>
             	 Items
            	</Link>
-            <Link to="loginPage"
-            	  activeStyle={{
-            	  	backgroundColor: "white",
+          <div>
+            <Link to="signin"activeStyle={{backgroundColor: "white",
             	  	color: "blue"
-            	  }}>
-            	 Login
+            	  }}><button>
+            	 Sign In</button>
            	</Link>
+            <Link to="signup"activeStyle={{backgroundColor: "white",
+            	  	color: "blue"
+            	  }}><button>
+            	 Sign Up</button>
+           	</Link>
+
+          </div>
         </nav>
     )
 }
