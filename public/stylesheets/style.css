@@ -1,109 +1,124 @@
 html, body {
-    font-family: "Architects Daughter", sans-serif;
-    min-width: 100%;
-    margin: 0;
+  font-family: "Architects Daughter", sans-serif;
+  min-width: 100%;
+  margin: 0;
 }
-
 
 .app {
-    position: relative;
-    display: flex;
+  position: relative;
+  display: flex;
 }
-
 
 .home {
-    display: flex;
-    min-width: 100%;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
+  display: flex;
+  min-width: 100%;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
-.home > nav {
-    display: flex;
-    background-color: rgb(80, 182, 182);
-    line-height: 4em;
-    flex-direction: row;
-    min-width: 100%;
+.home>nav {
+  display: flex;
+  background-color: rgb(80, 182, 182);
+  line-height: 4em;
+  flex-direction: row;
+  min-width: 100%;
 }
 
-.home > nav > a {
-    flex-basis: calc(33.33% - 3em);
-    flex-grow: 1;
-    color: white;
-    text-decoration: none;
-    font-size: 2em;
-    text-align: center;
+.home>nav>a {
+  flex-basis: calc(33.33% - 3em);
+  flex-grow: 1;
+  color: white;
+  text-decoration: none;
+  font-size: 2em;
+  text-align: center;
 }
 
 #homebox {
-    color: #E1F5F5;
-    text-shadow: 5px -5px rgb(80, 182, 182);
-    display: flex;
-    min-width: 100%;
-    min-height: 900px;
-    background-image: url("../assets/giveaway.jpg");
-
-
-    background-repeat: no-repeat;
-    background-size: cover;
-    opacity: 0.9;
+  color: #E1F5F5;
+  text-shadow: 5px -5px rgb(80, 182, 182);
+  display: flex;
+  min-width: 100%;
+  min-height: 900px;
+  background-image: url("../assets/giveaway.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.9;
 }
 
 .page>nav {
-    display: flex;
-    background-color: rgb(80, 182, 182);
-    line-height: 4em;
-    flex-direction: column;
+  display: flex;
+  background-color: rgb(80, 182, 182);
+  line-height: 4em;
+  flex-direction: column;
 }
 
-.page > nav > a {
-    color: white;
-    text-decoration: none;
-    padding-left: 0.3em;
+.page>nav>a {
+  color: white;
+  text-decoration: none;
+  padding-left: 0.3em;
 }
 
 .item-list {
-    display: flex;
-    flex-wrap: wrap;
-    min-width: 90%;
-    align-content: space-around;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  align-content: space-around;
+  /*background-color: red*/
 }
 
-.item-list > h1, .item-list > span {
-    min-width: 100%;
-    padding-bottom: 1em;
+.item-list>h1, .item-list>span {
+  min-width: 30%;
+  padding-bottom: 1em;
+ background-color: rgb(80, 182, 182);
 }
 
 .item {
-    flex-direction: row;
-    flex-basis: calc(33.33% - 3em);
-    flex-grow: 1;
+  flex-direction: row;
+  /*flex-basis: calc(33.33% - 3em);
+  flex-grow: 1;*/
+  /*background-color: purple;*/
 }
 
-.item > h1:first-of-type {
-    font-weight: 100;
-    flex-basis: 100%;
-    font-size: 1.5em;
-    text-transform: capitalize;
+.item> .row{
+  background-color:black;
+}
+.item #item-col{
+  /*background-color: purle;*/
+
 }
 
-.about > p {
-    font-size: 1.3em;
+.item #item-col .img-case{
+  background-color:brown;
+  width:80%;
+  height:300px;
+
+}
+
+
+.item>h1:first-of-type {
+  font-weight: 100;
+  flex-basis: 100%;
+  font-size: 1.5em;
+  text-transform: capitalize;
+}
+
+.about>p {
+  font-size: 1.3em;
 }
 
 .page {
-    display: flex;
-    flex-grow: 1;
+  display: flex;
+  flex-grow: 1;
 }
 
-.page > div {
-    margin: 0.5em;
+.page>div {
+  margin: 0.5em;
 }
 
-.item > a {
-    font-variant: small-caps;
-    position: relative;
-    left: 75%;
-    text-decoration: underline;
+.item>a {
+  font-variant: small-caps;
+  position: relative;
+  left: 75%;
+  text-decoration: underline;
 }
