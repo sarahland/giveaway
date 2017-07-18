@@ -1,7 +1,10 @@
 import { PropTypes, Component } from 'react';
 import React from 'react';
+import FileUploader from 'react-firebase-file-uploader';
+
 let _name, _email, email, _phonNumber,phoneNumber, address, _address, itemName, _itemName, _description, descrption, _itemPicture, itemPicture = "";
 let _itemCondition, itemCondition= false;
+
 class DonateNow extends Component{
   constructor(){
     super();
@@ -24,9 +27,9 @@ class DonateNow extends Component{
 
   render(){
     return (
-
+       <div>
         <form onSubmit={this.submit} className="donate-now-form">
-          <label htmlFor="name">Donation From</label>
+          <label htmlFor="name">Donation Form</label>
           <input id="name"
               type="text"
               required
@@ -79,6 +82,7 @@ class DonateNow extends Component{
 
               <button> Add Donation</button>
         </form>
+      </div>
     )
   }
 }
