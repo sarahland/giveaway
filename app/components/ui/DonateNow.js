@@ -1,6 +1,7 @@
 import { PropTypes, Component } from 'react';
 import React from 'react';
 import FileUploader from 'react-firebase-file-uploader';
+import firebase from '../../config/firebase.js';
 
 let _name, _email, email, _phonNumber,phoneNumber, address, _address, itemName, _itemName, _description, descrption, _itemPicture, itemPicture = "";
 let _itemCondition, itemCondition= false;
@@ -13,6 +14,28 @@ class DonateNow extends Component{
   }
   submit(e){
     e.preventDefault()
+    const donationsRef = firebase.database().ref('donations');
+    const donation = {
+      name: _name.value,
+      email: _email.value,
+      phoneNumber:_phonNumber.value,
+      address: _address.value,
+      itemName: _itemName.value,
+      itemCondition: _itemCondition.checked,
+      description: _description.value,
+      itemPicture: _itemPicture.value
+    }
+    donationsRef.push(donation);
+    this.setState({
+      name: '',
+      email: '',
+      phoneNumber: '',
+      address: '',
+      itemName: '',
+      itemCondition: '',
+      description: '',
+      itemPicture: ''
+    });
     console.log({
       name: _name.value,
       email: _email.value,
@@ -92,6 +115,7 @@ class DonateNow extends Component{
                    required
                    defaultValue={itemPicture}
                    ref={input => _itemPicture =input}/>
+
 
               </div>
               <div>
