@@ -1,13 +1,10 @@
 import React from 'react';
-import * as firebase from 'firebase';
-//import { hashHistory } from './config/routes';
-import { browserHistory } from 'react-router';
+import { hashHistory } from '../../config/routes';
 import Validation from 'react-validation';
 import validator from 'validator';
 import validation from './validation';
 import  {Component, PropTypes} from 'react';
-
-
+import firebase from '../../config/firebase.js';
 class SignUp extends React.Component {
   constructor(props) {
       super(props);
@@ -36,7 +33,6 @@ class SignUp extends React.Component {
           });
 
   }
-
   render() {
       return (
           <div>
