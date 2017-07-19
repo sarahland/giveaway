@@ -1,4 +1,4 @@
-import { PropTypes, Component } from 'react';
+import {PropTypes, Component} from 'react';
 import React from 'react';
 import FileUploader from 'react-firebase-file-uploader';
 import firebase from '../../config/firebase.js';
@@ -12,7 +12,7 @@ class DonateNow extends Component{
     this.submit = this.submit.bind(this);
 
   }
-  submit(e){
+  submit(e) {
     e.preventDefault()
     const donationsRef = firebase.database().ref('donations');
     const donation = {
@@ -39,7 +39,7 @@ class DonateNow extends Component{
     console.log({
       name: _name.value,
       email: _email.value,
-      phoneNumber:_phonNumber.value,
+      phoneNumber: _phonNumber.value,
       address: _address.value,
       itemName: _itemName.value,
       itemCondition: _itemCondition.checked,
@@ -48,8 +48,9 @@ class DonateNow extends Component{
     })
   }
 
-  render(){
+  render() {
     return (
+
        <div>
         <form onSubmit={this.submit} className="donate-now-form">
           <div>
@@ -59,7 +60,7 @@ class DonateNow extends Component{
               required
               defaultValue={name}
               ref={input => _name = input}/>
-          </div>
+            </div>
           <div>
           <label htmlFor="email">Email</label>
           <input id="email"
@@ -115,8 +116,6 @@ class DonateNow extends Component{
                    required
                    defaultValue={itemPicture}
                    ref={input => _itemPicture =input}/>
-
-
               </div>
               <div>
               <button>Add Donation</button>
