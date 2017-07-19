@@ -14,9 +14,7 @@ import { browserHistory } from 'react-router';
           this.SignIn = this.SignIn.bind(this)
       }
       SignIn(){
-          // let EmailInputValue = this.refs.email.value;
-          // let PasswordInputValue = this.refs.password.value;
-          //   console.log( EmailInputValue ,  PasswordInputValue );
+          
                  let signIn = {
                   Email : this.refs.email.value,
                   Password : this.refs.password.value,
