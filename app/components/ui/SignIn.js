@@ -1,12 +1,11 @@
 import React from 'react';
-import  firebase from 'firebase';
-//import { hashHistory } from './config/routes';
+import { hashHistory } from '../../config/routes';
 import Validation from 'react-validation';
 import validator from 'validator';
 import validation from './validation';
 import  {Component, PropTypes} from 'react';
 import { browserHistory } from 'react-router';
-
+import firebase from '../../config/firebase.js';
 
   class SignIn extends React.Component {
       constructor(props) {
@@ -14,7 +13,7 @@ import { browserHistory } from 'react-router';
           this.SignIn = this.SignIn.bind(this)
       }
       SignIn(){
-          
+
                  let signIn = {
                   Email : this.refs.email.value,
                   Password : this.refs.password.value,
