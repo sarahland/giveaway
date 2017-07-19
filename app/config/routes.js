@@ -4,8 +4,10 @@ import Home from '../components/ui/Home'
 import About from '../components/ui/About'
 import DonateNow from '../components/ui/DonateNow'
 import ItemList from '../components/ui/ItemList'
-import LoginPage from '../components/ui/LoginPage'
+import SignIn from '../components/ui/SignIn'
+import SignUp from '../components/ui/SignUp'
 import {Left, Right, Whoops404} from '../components'
+import { browserHistory } from 'react-router';
 
 const routes = (
   <Router history={hashHistory}>
@@ -15,8 +17,9 @@ const routes = (
 
       <Route path="about" component={About}/>
       <Route path="donatenow" component={DonateNow}/>
+      <Route path="signin" component={SignIn} />
+      <Route path="signup" component={SignUp} />
       <Route path="item" component={ItemList}/>
-      <Route path="loginPage" component={LoginPage}/>
     </Route>
     <Route path="*" component={Whoops404}/>
   </Router>

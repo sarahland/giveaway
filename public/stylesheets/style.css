@@ -17,12 +17,13 @@ html, body {
   flex-wrap: wrap;
 }
 
-.home>nav {
-  display: flex;
-  background-color: rgb(80, 182, 182);
-  line-height: 4em;
-  flex-direction: row;
-  min-width: 100%;
+
+.home > nav {
+    display: flex;
+    background-color: rgb(80, 182, 182);
+    line-height: 4em;
+    flex-direction: row;
+    min-width: 100%;
 }
 
 .home>nav>a {
@@ -35,29 +36,28 @@ html, body {
 }
 
 #homebox {
-  color: #E1F5F5;
-  text-shadow: 5px -5px rgb(80, 182, 182);
-  display: flex;
-  min-width: 100%;
-  min-height: 900px;
-  background-image: url("../assets/giveaway.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  opacity: 0.9;
+
+    color: #E1F5F5;
+    text-shadow: 5px -5px rgb(80, 182, 182);
+    display: flex;
+    min-width: 100%;
+    min-height: 900px;
+    background-image: url("../assets/giveaway.jpg");
+
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.9;
 }
 
 .page>nav {
-  display: flex;
-  background-color: rgb(80, 182, 182);
-  line-height: 4em;
-  flex-direction: column;
+    display: flex;
+    background-color: rgb(80, 182, 182);
+    line-height: 4em;
+    flex-direction: column;
 }
 
-.page>nav>a {
-  color: white;
-  text-decoration: none;
-  padding-left: 0.3em;
-}
+
 
 .item-list {
   display: flex;
