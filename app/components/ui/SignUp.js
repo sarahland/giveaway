@@ -5,6 +5,7 @@ import validator from 'validator';
 import validation from './validation';
 import  {Component, PropTypes} from 'react';
 import firebase from '../../config/firebase.js';
+
 class SignUp extends React.Component {
   constructor(props) {
       super(props);
