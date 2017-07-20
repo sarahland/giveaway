@@ -1,6 +1,8 @@
 import React from 'react'
 import MainMenu from './MainMenu'
-// import Navbar from '../'
+module.exports      = require('./Count');
+exports.OnlineCount =  require('./OnlineCount');
+exports.ViewCount =  require('./ViewCount');
 
 const Home = () =>
 
