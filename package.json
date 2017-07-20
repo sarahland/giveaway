@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "A project focusing on React and related tools to develop website to give away what we dod not want",
   "main": "server.js",
+  "engines" : {
+    "node": "7.8.0"
+  },
   "scripts": {
     "startexpress": "node server.js",
     "dev": "webpack -w",
