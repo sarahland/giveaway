@@ -15,12 +15,38 @@ class ItemList extends Component {
           email: "mohakemal9@gmail.com",
           thumbnail: "../assets/Samsung.jpg"
         }, {
-          item: "Shose",
+          item: "Ipad",
+          donatedBy: "Mohammed",
+          email: "sumara@gmail.com",
+          thumbnail: "../assets/ipad.jpg"
+        }, {
+          item: "Android Phone",
+          donatedBy: "Mohammed",
+          email: "faris@gmail.com",
+          thumbnail: "../assets/phone.jpg"
+        }, {
+          item: "HP Laptop",
+          donatedBy: "Mohammed",
+          email: "anyone@gmail.com",
+          thumbnail: "../assets/laptop.jpg"
+        }, {
+          item: "Tape Recorder",
+          donatedBy: "Mohammed",
+          email: "mohakemal9@gmail.com",
+          thumbnail: "../assets/tape.jpg"
+        }, {
+          item: "Samsung TV",
+          email: "mohakemal9@gmail.com",
+          thumbnail: "../assets/samsung.jpg"
+        },
+        
+        {
+          item: "Shoes",
           donatedBy: "Mohammed",
           email: "mohakemal9@gmail.com",
           thumbnail: "../assets/shose2.jpg"
         }, {
-          item: "Shose",
+          item: "Shoese",
           email: "mohakemal9@gmail.com",
           thumbnail: "../assets/shose.jpg"
         }, {
@@ -31,11 +57,9 @@ class ItemList extends Component {
           item: "Book",
           email: "mohakemal9@gmail.com",
           thumbnail: "../assets/book.jpg"
-        }, {
-          item: "Samsung TV",
-          email: "mohakemal9@gmail.com",
-          thumbnail: "../assets/samsung.jpg"
         }
+          
+        
       ]
     }
   }
