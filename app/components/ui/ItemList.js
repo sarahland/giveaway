@@ -15,6 +15,27 @@ class ItemList extends Component {
           email: "mohakemal9@gmail.com",
           thumbnail: "../assets/Samsung.jpg"
         }, {
+          item: "Acer Laptop",
+          donatedBy: "Mohammed",
+          email: "mohakemal9@gmail.com",
+          thumbnail: "../assets/acer.jpg"
+        }, {
+          item: "Computer Cord",
+          donatedBy: "Mohammed",
+          email: "mohfun@gmail.com",
+          thumbnail: "../assets/cord.jpg"
+        }, {
+          item: "Laptop Cord",
+          donatedBy: "Mohammed",
+          email: "m.reshid@gmail.com",
+          thumbnail: "../assets/cord2.jpg"
+        }, {
+          item: "Moderately Used HP",
+          donatedBy: "Mohammed",
+          email: "mohemal9@gmail.com",
+          thumbnail: "../assets/hp2.jpg"
+        },
+        {
           item: "Ipad",
           donatedBy: "Mohammed",
           email: "sumara@gmail.com",
