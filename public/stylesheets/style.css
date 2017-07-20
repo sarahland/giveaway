@@ -2,38 +2,78 @@ html, body {
   font-family: "Architects Daughter", sans-serif;
   min-width: 100%;
   margin: 0;
+
 }
+
+body{
+ background-image: url("../assets/background.png");
+  background-repeat:repeat;
+  background-size: cover;
+  }
+
 
 .app {
   position: relative;
   display: flex;
 }
-
 .home {
   display: flex;
   min-width: 100%;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
+  background-image: url("../assets/giveaway.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-
 
 .home > nav {
     display: flex;
-    background-color: rgb(80, 182, 182);
+    background-color: rgba(80, 182, 182, 0.3);
+    box-shadow:3px 3px rgba(255, 255, 232, 0.2);
     line-height: 4em;
     flex-direction: row;
     min-width: 100%;
 }
 
+
+
+.home nav div{
+  flex-direction:row;
+  padding:0;
+  }
+
+
+  .home nav div a button{
+  flex-direction:row;
+  }
+
+
+
+  .home nav div a button:hover{
+  background-color:#4e6b7c;
+  color:#fff;
+  }
+
+
+
+
 .home>nav>a {
   flex-basis: calc(33.33% - 3em);
   flex-grow: 1;
   color: white;
+  font-family: Roboto Slab;
   text-decoration: none;
-  font-size: 2em;
+  font-size: 150%;
   text-align: center;
+  padding-top:60px;
 }
+
+nav a:hover{
+  color:#f87258;
+}
+
+
 
 #homebox {
 
@@ -42,58 +82,164 @@ html, body {
     display: flex;
     min-width: 100%;
     min-height: 900px;
-    background-image: url("../assets/giveaway.jpg");
-
-
-    background-repeat: no-repeat;
+ /*   background-image: url("../assets/giveaway.jpg");
+   background-repeat: no-repeat;
     background-size: cover;
-    opacity: 0.9;
+    opacity: 0.9;*/
+}
+
+
+.page{
+   display: flex;
+  flex-grow: 1;
+ /* background-image: url("../assets/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height:800px;*/
 }
 
 .page>nav {
     display: flex;
-    background-color: rgb(80, 182, 182);
     line-height: 4em;
     flex-direction: column;
-}
+   background-color:rgba(233, 231, 231, 0.38);
+    box-shadow:2px 2px rgba(255, 255, 232, 0.6);
+    margin-left:40px;
+    margin-top:180px;
+    padding:40px;
+    border-radius: 10px;
+    height:400px;
+    }
+    
+ .page nav a{
+  highlight:none;
+  background-color:none;
+  border-radius: 10px;
+  width:100%;
+  }
 
 
+    
+     .page nav a{
+      height:50px;
+      margin:5px;
+      background-color:rgba(219, 185, 199, 0.38);
+      text-align:center;
+      text-decoration:none;
+      }
+
+
+
+    .page nav a button{
+      height:26px;
+      width:80px;
+      }
+
+
+      .page nav a button:hover{
+        background-color:#4e6b7c;
+        color:#fff;
+        }
+     
+
+    .page div form{
+    margin:auto;
+    margin-top:100px;
+    margin-left:60px;
+    font-size:120;
+    padding-top:10px;
+  /*  background-color:red;*/
+  
+    }
+  
+
+
+  .page div form button{
+    height:26px;
+  }
+
+
+ .page div form input{
+    height:20px;
+ width:250px;
+  }
+
+
+/*
+.item-list{
+  background-color:red;
+  width:80%;
+  height:auto;
+  margin-top:50px;
+
+}*/
 
 .item-list {
   display: flex;
   flex-wrap: wrap;
-  width: 100%;
+  width:60%;
+  padding:30px;
   align-content: space-around;
-  /*background-color: red*/
-}
+  font-family: Roboto Slab;
+ /* background-color:red;*/
+  }
 
-.item-list>h1, .item-list>span {
+
+.item-list>span {
+  margin-top:50px;
   min-width: 30%;
   padding-bottom: 1em;
- background-color: rgb(80, 182, 182);
-}
+  }
+
+
+
+
+  .item-list>h1{
+  margin-top:50px;
+  min-width: 30%;
+  padding-bottom: 1em;
+  color:rgb(128, 74, 82);
+ /* color:#FFFBDD;*/
+ background-color:rgba(219, 216, 216, 0.48);
+  /*background-color:rgba(219, 216, 216, 0.68);*/
+  box-shadow:2px 2px rgba(255, 255, 232, 0.4);
+  padding:20px;
+  border-radius: 10px;
+  margin-bottom:30px;
+  }
+
+/*
+  .item-list>span {
+  margin-top:50px;
+  min-width: 30%;
+  padding-bottom: 1em;
+  color:#FFFBDD;
+  background-color:red;
+  }
+*/
+
+
+.item img{
+  width:200px;
+  height:200px;
+  }
 
 .item {
   flex-direction: row;
-  /*flex-basis: calc(33.33% - 3em);
-  flex-grow: 1;*/
+  flex-basis: calc(33.33% - 3em);
+  flex-grow: 1;
+  margin-left:40px;
+
   /*background-color: purple;*/
-}
+  }
 
-.item> .row{
-  background-color:black;
-}
-.item #item-col{
-  /*background-color: purle;*/
-
-}
 
 .item #item-col .img-case{
   background-color:brown;
   width:80%;
   height:300px;
 
-}
+  }
 
 
 .item>h1:first-of-type {
@@ -101,24 +247,54 @@ html, body {
   flex-basis: 100%;
   font-size: 1.5em;
   text-transform: capitalize;
+  }
+
+
+.page .about{
+  margin-left:60px;
+  margin-top:180px;
+  background-color:rgba(219, 216, 216, 0.400);
+  }
+
+
+  .page .about h1{
+  padding:20px;
+  text-align: center;
+  min-width: 30%;
+  color:rgb(128, 74, 82);
+  background-color:rgba(219, 216, 216, 0.48);
+  border-bottom:2px solid white;
+  margin-bottom:70px;
+  }
+
+
+   .page .about p{
+    padding:40px;
+    width:500px;
+   }
+
+
+
+.page .donate-now-form{
+ background-color:rgba(255, 0, 0, 0.17);
+ border-radius: 10px;
+  margin:auto;
+  margin-top:200px;
+  margin-left:200px;
+  }
+
+
+
+.page .donate-now-form div{
+margin-top:10px;
+
 }
 
-.about>p {
-  font-size: 1.3em;
-}
 
-.page {
-  display: flex;
-  flex-grow: 1;
-}
 
-.page>div {
-  margin: 0.5em;
-}
-
-.item>a {
+/*.item>a {
   font-variant: small-caps;
   position: relative;
   left: 75%;
   text-decoration: underline;
-}
+}*/
