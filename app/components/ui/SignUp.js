@@ -12,12 +12,12 @@ class SignUp extends React.Component {
       this.SignUp = this.SignUp.bind(this)
   }
   SignUp() {
-      let firstNameValue = this.refs.firstName.value;
+      //let NameInputValue = this.refs.Name.value;
       let EmailInputValue = this.refs.email.value;
       let PasswordInputValue = this.refs.password.value;
-      console.log(firstNameInputValue,EmailInputValue,PasswordInputValue);
+      console.log(EmailInputValue,PasswordInputValue);
 
-      firebase.auth().createUserWithfirstNameEmailAndPassword(firstNameInputValue,EmailInputValue, PasswordInputValue)
+      firebase.auth().createUserWithEmailAndPassword (EmailInputValue, PasswordInputValue)
           .then((user) => {
               let myObject = {
                   email: EmailInputValue
@@ -39,10 +39,18 @@ class SignUp extends React.Component {
       return (
           <div>
               <form >
-                  <label>firstName</label><input type="text" ref="firstName" />
+                <div>
+                  <h1>Please Create Your Account</h1>
+                </div>
+                <div>
                   <label>Email</label><input type="text" ref="email" />
+                </div>
+              <div>
                   <label>Password</label><input type="password" ref="password" />
+                </div>
+                <div>
                   <button type="button" onClick={this.SignUp}>Sign Up</button>
+                </div>
 
               </form>
           </div>

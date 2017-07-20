@@ -4,6 +4,7 @@ import Home from '../components/ui/Home'
 import About from '../components/ui/About'
 import DonateNow from '../components/ui/DonateNow'
 import ItemList from '../components/ui/ItemList'
+import Electronics from '../components/ui/Electronics'
 import SignIn from '../components/ui/SignIn'
 import SignUp from '../components/ui/SignUp'
 import {Left, Right, Whoops404} from '../components'
@@ -18,6 +19,7 @@ const routes = (
       <Route path="signin" component={SignIn} />
       <Route path="signup" component={SignUp} />
       <Route path="item" component={ItemList}/>
+      <Route path="electronics" component={Electronics}/>
     </Route>
     <Route path="*" component={Whoops404}/>
   </Router>
