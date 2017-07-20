@@ -52,9 +52,12 @@ class DonateNow extends Component{
     return (
 
        <div>
+         <div>
+           <h1>To Donate Please Fill Up The Following Form</h1>
+         </div>
         <form onSubmit={this.submit} className="donate-now-form">
           <div>
-          <label htmlFor="name">Donation Form</label>
+          <label htmlFor="name">Name</label>
           <input id="name"
               type="text"
               required

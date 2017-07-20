@@ -1,11 +1,11 @@
 html, body {
   font-family: "Architects Daughter", sans-serif;
   min-width: 100%;
-  margin: 0;
+  margin: 30;
 }
 
 .app {
-  position: relative;
+  position: absolute;
   display: flex;
 }
 
@@ -39,7 +39,7 @@ html, body {
 
     color: #E1F5F5;
     text-shadow: 5px -5px rgb(80, 182, 182);
-    display: flex;
+    display: inline;
     min-width: 100%;
     min-height: 900px;
     background-image: url("../assets/giveaway.jpg");

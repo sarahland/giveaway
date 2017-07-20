@@ -36,9 +36,21 @@ import firebase from '../../config/firebase.js';
           return (
               <div>
                   <form >
+                    <div>
+                      <h1>Log in to your account</h1>
+                    </div>
+                    <div>
                       <label>Email</label><input type="text" ref="email" />
+                    </div>
+                    <div>
                       <label>Password</label><input type="password" ref="password" />
-                      <button type="button" onClick={this.SignIn}>SignIn</button>
+                    </div>
+                    <div>
+                      <button type="button" onClick={this.SignIn}>Sign In</button>
+                    </div>
+                    <div>
+                      <button type="button" onClick={this.SignIn}>Forgot Password</button>
+                    </div>
                   </form>
               </div>
           );
