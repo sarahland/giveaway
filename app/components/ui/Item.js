@@ -13,7 +13,7 @@ class Item extends Component {
             ? <FaHeart/>
             : null}</h1>
             <div className="row">
-            <div className="col-md-3" class="item-col">
+            <div className="col-md-3" className="item-col">
               <div className="image-case">
                   <img src={thumbnail} alt="item picture"/>
                   <p>

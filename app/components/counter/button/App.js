@@ -3,7 +3,7 @@ var Count = require('../../lib/Count');
 var OnlineCount = require('../../lib/OnlineCount');
 var ViewCount = require('../../lib/ViewCount');
 
-var App = React.createClass({
+class App extends Component({
 
   render: function(){
     return (

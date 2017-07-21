@@ -14,3 +14,4 @@ export default class App extends Component {
       storageBucket: "giveaway-a0b3b.appspot.com",
       messagingSenderId: "94459880442")};
   }
+}

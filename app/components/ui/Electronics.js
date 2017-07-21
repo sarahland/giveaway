@@ -3,7 +3,7 @@ import React from 'react';
 import {Component} from 'react'
 import Item from './Item'
 
-class Electronics extends Component {
+class Electronics extends Component{
 
   constructor(props) {
     super(props)
