@@ -1,14 +1,16 @@
 'use strict';
 import React from 'react';
 import Count from './Count';
-export deafult class OnlineCount extends Component {
+
+export default class OnlineCount extends Component {
   propTyprs: {
     firebaseHost: React.PropTypes.string.isRequired,
     firebaseResourceId: React.PropTypes.string.isRequired,
     counterText: React.PropTypes.string,
     className: React.PropTypes.string,
-  },
-  render: fucntion (){
+  }
+
+  render(){
     return(
       <Count isOnlineCounter={true}
         className={this.props.className}
@@ -17,4 +19,4 @@ export deafult class OnlineCount extends Component {
         firebaseResourceId={this.props.firebaseResourceId}/>
     )
   }
-}); 
+}

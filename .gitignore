@@ -17,3 +17,4 @@ jspm_packages
 
 # Remove bundle.min.js from repo
 public/assets/bundle.min.js
+node_modules
