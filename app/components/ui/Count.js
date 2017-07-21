@@ -1,9 +1,9 @@
 'use strict';
 
-var React = require('react');
-var Firebase = require('firebase');
-var uuid = require('node-uuid');
-var styles = require('./styles');
+import React from ('react');
+import firebase from '../../config/firebase.js';
+import nodeUuid from ('node-uuid');
+import styles from ('../../styles');
 
 var Count = React.createClass({
 
