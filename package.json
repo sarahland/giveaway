@@ -9,7 +9,7 @@
   "scripts": {
     "startexpress": "node server.js",
     "dev": "webpack -w",
-    "start": "nodemon server.js --exec babel-node --presets es2015,react"
+    "start": "node server.js --exec babel-node --presets es2015,react"
   },
   "keywords": [],
   "author": "giveaway Developers at GW University",
