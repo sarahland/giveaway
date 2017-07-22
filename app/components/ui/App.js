@@ -2,7 +2,7 @@ import React from 'react'
 import React {Component}
 from 'react'
 import firebase from 'firebase'
-import loginPage from './loginPage'
+
 
 export default class App extends Component {
   componentWillMount() {
