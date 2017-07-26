@@ -17,4 +17,9 @@ jspm_packages
 
 # Remove bundle.min.js from repo
 public/assets/bundle.min.js
+<<<<<<< HEAD
+
+package-lock.json
+=======
 node_modules
+>>>>>>> c439f043093ea2d74f34ecb1310ed1c7f5563cb1
