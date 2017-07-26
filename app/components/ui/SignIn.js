@@ -34,10 +34,9 @@ import firebase from '../../config/firebase.js';
 
       render() {
           return (
-              <div>
                   <form >
                     <div>
-                      <h1>Log in to your account</h1>
+                      <h1>Log in to create an account</h1>
                     </div>
                     <div>
                       <label>Email</label><input type="text" ref="email" />
@@ -52,7 +51,6 @@ import firebase from '../../config/firebase.js';
                       <button type="button" onClick={this.SignIn}>Forgot Password</button>
                     </div>
                   </form>
-              </div>
           );
       }
   }
