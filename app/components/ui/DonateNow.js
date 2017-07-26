@@ -51,8 +51,8 @@ class DonateNow extends Component{
   render() {
     return (
 
-       <div>
-         <div>
+       <div className="div-form">
+       <div className="donate-heading">
            <h1>To Donate Please Fill Up The Following Form</h1>
          </div>
         <form onSubmit={this.submit} className="donate-now-form">

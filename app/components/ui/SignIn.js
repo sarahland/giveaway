@@ -28,21 +28,15 @@ import firebase from '../../config/firebase.js';
     var errorCode = error.code;
     var errorMessage = error.message;
     alert(errorMessage);
-    <div className="alert alert-danger" role="alert">
-      <span className="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
-      <span className="sr-only">Error:</span>
-      &nbsp;{this.state.registerError}
-    </div>
     // ...
   });
       }
 
       render() {
           return (
-              <div>
                   <form >
                     <div>
-                      <h1>Log in to your account</h1>
+                      <h1>Log in to create an account</h1>
                     </div>
                     <div>
                       <label>Email</label><input type="text" ref="email" />
@@ -57,7 +51,6 @@ import firebase from '../../config/firebase.js';
                       <button type="button" onClick={this.SignIn}>Forgot Password</button>
                     </div>
                   </form>
-              </div>
           );
       }
   }

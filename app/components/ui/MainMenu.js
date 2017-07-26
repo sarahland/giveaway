@@ -9,34 +9,34 @@ const MainMenu = () => {
             <Link to="/"><FaHome/>GiveAway</Link>
             <Link to="about"
             	  activeStyle={{
-            	  backgroundColor: "green",
+            	  backgroundColor: "#ddd",
             	  color: "white"
             	}}>
             	About
             </Link>
             <Link to="donatenow"
             	  activeStyle={{
-            	  backgroundColor: "green",
+            	  backgroundColor: "#ddd",
             	  color: "white"
             	}}>
             	Donate Now
             </Link>
             <Link to="item"
             	  activeStyle={{
-            	  	backgroundColor: "green",
+            	  	backgroundColor: "#ddd",
             	  	color: "white"
             	  }}>
             	 Home Items
            	</Link>
             <Link to="electronics"
             	  activeStyle={{
-            	  	backgroundColor: "green",
+            	  	backgroundColor: "#ddd",
             	  	color: "white"
             	  }}>
             	 Electronics
            	</Link>
           <div>
-            <Link to="signin"activeStyle={{backgroundColor: "green",
+            <Link to="signin"activeStyle={{backgroundColor: "white",
             	  	color: "white"
             	  }}><button>
             	 Sign In</button>
@@ -51,35 +51,35 @@ const MainMenu = () => {
         </nav>
     )
 
-  return (
-    <nav>
-      <Link to="/"><FaHome/>Give Away</Link>
-      <Link to="about" activeStyle={{
-        backgroundColor: "white",
-        color: "blue"
-      }}>
-        About
-      </Link>
-      <Link to="donatenow" activeStyle={{
-        backgroundColor: "white",
-        color: "blue"
-      }}>
-        Donate Now
-      </Link>
-      <Link to="item" activeStyle={{
-        backgroundColor: "white",
-        color: "blue"
-      }}>
-        Items
-      </Link>
-      <Link to="loginPage" activeStyle={{
-        backgroundColor: "white",
-        color: "blue"
-      }}>
-        Login
-      </Link>
-    </nav>
-  )
+  // return (
+  //   <nav>
+  //     <Link to="/"><FaHome/>Give Away</Link>
+  //     <Link to="about" activeStyle={{
+  //       backgroundColor: "white",
+  //       color: "blue"
+  //     }}>
+  //       About
+  //     </Link>
+  //     <Link to="donatenow" activeStyle={{
+  //       backgroundColor: "white",
+  //       color: "blue"
+  //     }}>
+  //       Donate Now
+  //     </Link>
+  //     <Link to="item" activeStyle={{
+  //       backgroundColor: "white",
+  //       color: "blue"
+  //     }}>
+  //       Items
+  //     </Link>
+  //     <Link to="loginPage" activeStyle={{
+  //       backgroundColor: "white",
+  //       color: "blue"
+  //     }}>
+  //       Login
+  //     </Link>
+  //   </nav>
+  // )
 
 }
 
